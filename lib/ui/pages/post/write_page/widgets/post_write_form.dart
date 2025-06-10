@@ -12,7 +12,7 @@ class PostWriteForm extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     PostWriteFm fm = ref.read(PostWriteProvider.notifier);
     PostListVM vm = ref.read(postListProvider.notifier);
-    PostWriteModel model = ref.watch(PostWriteProvider);
+    PostWriteModel model = ref.read(PostWriteProvider);
 
     return Form(
       child: ListView(
